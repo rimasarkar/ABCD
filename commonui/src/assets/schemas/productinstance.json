@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "ProductHeader": {
+      "type": "object",
+      "title": "<b>Product Instance Summary</b>",
+      "properties": {
+        "producttype": {
+          "type": "string",
+          "readonly": true,
+          "title": "Product",
+          "default": "",
+          "examples": [
+            "OLM"
+          ]
+        },
+        "enterpriseAccountId": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Account ID",
+          "default": "",
+          "examples": [
+            "BCKM6349"
+          ]
+        },
+        "enterpriseItemId": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Item ID",
+          "default": "",
+          "examples": [
+            "SPPOW03061"
+          ]
+        },
+        "productinstance": {
+          "type": "string",
+          "readonly": true,
+          "title": "Titan Instance ID",
+          "default": "",
+          "examples": [
+            "1204"
+          ]
+        },
+        "enterpriseaccount": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Account Name",
+          "default": "",
+          "examples": [
+            "Joe Plumber"
+          ]
+        },
+        "businessLocationId": {
+          "type": "string",
+          "readonly": true,
+          "title": "MDB ID",
+          "default": "",
+          "examples": [
+            "10003698326"
+          ]
+        },
+        "productinstance": {
+          "type": "string",
+          "readonly": true,
+          "title": "Titan Instance ID",
+          "default": "",
+          "examples": [
+            "1204"
+          ]
+        },
+        "instanceStatus": {
+          "type": "string",
+          "readonly": true,
+          "title": "Instance Status",
+          "default": "",
+          "examples": [
+            "Active"
+          ]
+        },
+        "fulfilmentStatus": {
+          "type": "string",
+          "readonly": true,
+          "title": "Workflow Status",
+          "default": "",
+          "examples": [
+            "InProgress"
+          ]
+        },
+        "transactionType": {
+          "type": "string",
+          "readonly": true,
+          "title": "Recent Transaction",
+          "default": "",
+          "examples": [
+            "InProgress"
+          ]
+        },
+        "salesChannelCode": {
+          "type": "string",
+          "readonly": true,
+          "title": "Sales Channel",
+          "default": "",
+          "examples": [
+            "LOCAL"
+          ]
+        },
+        "serviceStartDate": {
+          "type": "string",
+          "readonly": true,
+          "format" : "date",
+          "title": "Service Start Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        },
+        "serviceEndDate": {
+          "type": "string",
+          "readonly": true,
+          "format" : "date",
+          "title": "Service End Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        },
+        "futureRequestedDate": {
+          "type": "string",
+          "readonly": true,
+          "format" : "date",
+          "title": "Future Provision Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        }
+      }
+    }
+  }
+}

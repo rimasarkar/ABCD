@@ -1,0 +1,36 @@
+.grid-container-seo {
+    
+  grid-template-columns: auto auto auto;    
+  padding: 10px;
+  
+}
+.grid-item-seo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 12px;
+  text-align: left;}
+
+  .grid-item-seo::content >>> div {
+  display: inline-grid !important;
+}
+::content >>> legend{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 0.0rem ! important;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+::content >>> button {
+   
+  width: 80px;
+  float: left;
+  font-weight: bolder;
+  margin-right: 10px;
+
+}

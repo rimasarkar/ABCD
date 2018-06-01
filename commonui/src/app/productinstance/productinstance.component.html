@@ -1,0 +1,27 @@
+
+<div class="row marketing border p-5 w-75">
+  <div class="col-lg-6">
+    <div *ngIf="error" class="alert alert-danger" role="alert">{{error}}</div>
+    <json-schema-form
+        *ngIf="formActive && !error"
+        loadExternalAssets="true"
+        [form]="product"
+        [options]="jsonFormOptions">
+    </json-schema-form>
+  </div>
+  <div class="col-lg-4  offset-md-2" *ngIf="product.data.ProductHeader">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action" id="transaction-history" data-toggle="list" routerLink="/contenthistory/{{ product.data.ProductHeader.productinstance }}">
+        <i class="fa fa-th-list"></i> Content History
+      </a>
+      <a class="list-group-item list-group-item-action" id="product-data" data-toggle="list" routerLink="/{{ product.data.ProductHeader.producttype| lowercase }}/{{ product.data.ProductHeader.enterpriseItemId }}">
+        <i class="fa fa-database"></i> Product Data
+      </a>
+      <a class="list-group-item list-group-item-action" id="model-transaction-history" data-toggle="list" routerLink="/modeltransactionhistory/{{ product.data.ProductHeader.productinstance }}">
+        <i class="fa fa-th-list"></i> Transaction History
+      </a>
+    </div>
+  </div>
+</div>
+
+

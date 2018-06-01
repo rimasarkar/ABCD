@@ -1,0 +1,98 @@
+
+<div class="border p-5 w-75">
+  <p class="font-weight-bold">Product Content History</p>
+  <div class="float-right"><a href="/productinstance"><i class="fa fa-arrow-circle-o-left"></i> Product Summary</a></div>
+<div class="col-lg-8">
+  <div *ngIf="error" class="alert alert-danger" role="alert">{{error}}</div>
+  <!-- <json-schema-form
+      *ngIf="formActive && !error"
+      loadExternalAssets="true"
+      [form]="product"
+      [options]="jsonFormOptions">
+  </json-schema-form> -->
+
+  <form>
+     
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Instance ID</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.instanceId}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Date&Time</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.datetimestamp|date: 'short'}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Transaction Type</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.TransactionType}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Source</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.Source}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">External Order Id</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.ExternalOrderId}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">User ID</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="{{pagerdata.UserId}}">
+      </div>
+    </div>
+    
+  </form>
+  <table class="table table-bordered" style="display:none">
+    <thead>
+      <th>TransactionId</th>
+      <th>InstanceId</th>
+      <th>datetimestamp</th>
+      <th>TransactionType</th>
+      <th>Source</th>
+      <th>ExternalOrderId</th>
+      <th>UserId</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of rowdata;let row_no = index">
+        <td>
+          <button type="button" class="btn btn-link" (click)="showproductcontentistory(row_no + 1)" value="{{item['transactionId']}}">{{item.transactionId}}</button>
+        </td>
+        <td>{{item.instanceId}}</td>
+        <td>{{item.datetimestamp|date: format}}</td>
+        <td>{{item.TransactionType}}</td>
+        <td>{{item.Source}}</td>
+        <td>{{item.ExternalOrderId}}</td>
+        <td>{{item.UserId}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <table class="table table-bordered">
+      <thead>
+        <th>TransactionId</th>
+        <th>AttributeName</th>
+        <th>OldValue</th>
+        <th>NewValue</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productcontenthistoryrowdata">
+          <td>{{item.transactionId}}</td>
+          <td>{{item.AttributeName}}</td>
+          <td>{{item.OldValue}}</td>
+          <td>{{item.NewValue}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ngb-pagination (pageChange)="onPager($event)" [collectionSize]="50" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+</div>
+</div>

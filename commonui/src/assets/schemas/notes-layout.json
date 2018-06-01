@@ -1,0 +1,15 @@
+[
+    
+    {
+        "key": "notes",
+        "type": "HorizontalLayout",
+        "flex-flow":"row-reverse nowrap",
+        "border": true,   
+        "items": [
+            "sequence",
+            "notes",
+            "addedBy",
+            "addedOn"
+        ]
+    }
+]

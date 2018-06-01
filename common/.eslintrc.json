@@ -1,0 +1,25 @@
+{   
+   "extends": "eslint:recommended",
+   "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "allowImportExportEverywhere": false
+    },
+    "plugins": [
+    "node",
+    "promise",
+    "standard"
+  ],
+   "env": {
+       "node": true,                           // Node.js global variables and Node.js-specific rules
+        "mocha": true,                         // adds all of the Mocha testing global variables.
+        "es6": true
+   },
+   "rules": {
+        "semi": 2,                              // require or disallow use of semicolons
+        "strict": 1,                            // controls location of Use Strict Directives
+        "space-after-function-name": 0,         // require a space after function names (off by default)
+        "space-after-keywords": 0,              // require a space after certain keywords (off by default)
+        "handle-callback-err": 1                // enforces error handling in callbacks (off by default) (on by default in the node environment)
+    }
+}

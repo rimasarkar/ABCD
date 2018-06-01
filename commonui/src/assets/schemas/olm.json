@@ -1,0 +1,389 @@
+{
+    "type": "object",    
+    "properties": {
+        "ProductHeader": {
+            "type": "object",    
+            "title": "<b>OLM product summary<b>",
+            "properties": {
+                "producttype": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Product",
+                    "default": "",
+                    "examples": [ "OLM" ]
+                },"enterpriseAccountId": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Enterprise Account ID",
+                    "default": "",
+                    "examples": [ "BCKM6349" ]
+                },"enterpriseItemId": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Enterprise Item ID",
+                    "default": "",
+                    "examples": [ "SPPOW03061" ]
+                },"productinstance": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Titan Instance ID",
+                    "default": "",
+                    "examples": [ "1204" ]
+                },"businessLocationId": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "MDB ID",
+                    "default": "",
+                    "examples": [ "10003698326" ]
+                },"instanceStatus": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Instance Status",
+                    "default": "",
+                    "examples": [ "Active" ]
+                },"fulfilmentStatus": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Workflow Status",
+                    "default": "",
+                    "examples": [ "InProgress" ]
+                },"transactionType": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Recent Transaction",
+                    "default": "",
+                    "examples": [ "InProgress" ]
+                },"salesChannelCode": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Sales Channel",
+                    "default": "",
+                    "examples": [ "LOCAL" ]
+                },"serviceStartDate": {
+                    "type": "string",
+                    "readonly": true,
+                    "format": "date",
+                    "title": "Service Start Date",
+                    "default": "",
+                    "examples": [ "2018-03-07" ]
+                },"serviceEndDate": {
+                    "type": "string",
+                    "readonly": true,
+                    "format": "date",
+                    "title": "Service End Date",
+                    "default": "",
+                    "examples": [ "2018-03-07" ]
+                },"futureRequestedDate": {
+                    "type": "string",
+                    "readonly": true,
+                    "format": "date",
+                    "title": "Future Provision Date",
+                    "default": "",
+                    "examples": [ "2018-03-07" ]
+                }
+            }
+        },
+        "YextLocationData": {
+            "type": "object",
+            "title": "<b>Yext Location Data<b>",
+            "properties": {
+                "businessName": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Business Name",
+                    "default": "",
+                    "examples": [ "businessName" ]
+                },"contactFirstName": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Contact First Name",
+                    "default": "",
+                    "examples": [ "contactFirstName" ]
+                },"contactMiddleName": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Contact Middle Name",
+                    "default": "",
+                    "examples": [ "contactMiddleName" ]
+                },"contactLastName": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Contact Last Name",
+                    "default": "",
+                    "examples": [ "contactLastName" ]
+                },"phone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Phone",
+                    "default": "",
+                    "examples": [ "8008888601" ]
+                },"businessDescription": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Business Description",
+                    "default": "",
+                    "examples": [ "businessDescription" ]
+                },"isPhoneTracked": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Is Phone Tracked",
+                    "default": "",
+                    "examples": [ "isPhoneTracked" ]
+                },"specialties": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Specialties",
+                    "default": "",
+                    "examples": [ "specialties" ]
+                },"address": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "address",
+                    "default": "",
+                    "examples": [ "Dex Media Office" ]
+                },"address2": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "address2",
+                    "default": "",
+                    "examples": [ "Dallas" ]
+                },"displayAddress": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Display Address",
+                    "default": "",
+                    "examples": [ "displayAddress" ]
+                },"city": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "city",
+                    "default": "",
+                    "examples": [ "Dallas" ]
+                },"state": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "state",
+                    "default": "",
+                    "examples": [ "Texas" ]
+                },"subLocality": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "SubLocality",
+                    "default": "",
+                    "examples": [ "Texas" ]
+                },"zip": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "zip",
+                    "default": "",
+                    "examples": [ "30053" ]
+                },"localPhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Local Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"alternatePhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Alternate Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"faxPhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Fax Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"mobilePhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Mobile Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"tollfreePhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Tollfree Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"ttyPhone": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Tty Phone",
+                    "default": "",
+                    "examples": [ "808888601" ]
+                },"featuredMessage": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Featured Message",
+                    "default": "",
+                    "examples": [ "featuredMessage" ]
+                },"businessHours": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Business Hours",
+                    "default": "",
+                    "examples": [ "9 AM to 6 PM" ]
+                },"yearEstablished": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Year Established",
+                    "default": "",
+                    "examples": [ "2017" ]
+                },"facebookPageUrl": {
+                    "type": "string",
+                    "readonly": true,
+                    "title": "Facebook Url",
+                    "default": "",
+                    "examples": [ "https://facebook.com" ]
+                }
+                
+            }
+        },
+            "YextCategoryList": {
+                "type": "array",
+                "addable" : false,
+                "removable":false,
+                "orderable": false, 
+                "title": "<b>Yext Category List</b>",                 
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "yextCategoryId": {
+                            "title": "Yext Category Id",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "123456" ]
+                        },
+                        "addedBy": {
+                            "title": "Added By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "addedDate": {
+                            "title": "Added Date",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-12-20T16:44:04.000Z" ]
+                        },
+                        "updatedBy": {
+                            "title": "Updated By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "updatedDate": {
+                            "title": "Updated Date",
+                            "tyre": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-12-20T16:44:04.000Z" ]
+                        }
+                    }
+                }
+            },
+            "YextLanguageDetails": {
+                "type": "array",
+                "addable" : false,
+                "removable":false,
+                "orderable": false,
+                "title": "<b>Yext Language Details</b>",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "language": {
+                            "title": "language",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "English" ]
+                        },
+                        "addedBy": {
+                            "title": "Added By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "addedDate": {
+                            "title": "Added Date",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-12-20T16:44:04.000Z" ]
+                        },
+                        "updatedBy": {
+                            "title": "Updated By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "updatedDate": {
+                            "title": "Updated Date",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-12-20T16:44:04.000Z" ]
+                        }
+                    }
+                }
+            },
+            "YextPaymentDetails": {
+                "schema": "http://json-schema.org/draft-04/schema#",
+                "type": "array",
+               "format":"table",
+                "uniqueItems": true,
+                "addable" : false,
+                "removable":false,
+                "orderable": false,
+                "title": "<b>Yext Payment Details</b>",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "paymentOption": {
+                            "title": "Payment Option",
+                            "type": "string",
+                           
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "By Cash" ]
+                        },
+                        "addedBy": {
+                            "title": "Added By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "addedDate": {
+                            "title": "Added Date",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-12-20T16:44:04.000Z" ]
+                        },
+                        "updatedBy": {
+                            "title": "Updated By",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "koushk01" ]
+                        },
+                        "updatedDate": {
+                            "title": "Updated Date",
+                            "type": "string",
+                            "readonly": true,
+                            "default": "",
+                            "examples": [ "2017-11-13" ]
+                        }
+                    }
+                }
+            }
+    }
+}

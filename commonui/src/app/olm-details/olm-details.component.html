@@ -1,0 +1,28 @@
+    <div *ngIf="error" class="alert alert-danger" role="alert">{{error}}</div>
+    <div >
+              <button (click)="onBack(olmData)">Back</button>
+     </div>
+    <div class="grid-container-olm">
+   <json-schema-form      
+        class="grid-item-olm" 
+        *ngIf="formActive && !error"
+        loadExternalAssets="true"
+        [form]="olmData"
+        [options]="jsonFormOptions">
+    </json-schema-form>
+  </div>
+  
+  <h1>Hello from the {{ title }}!</h1>
+
+  <div >
+      <table border=1>
+          <tr>
+              <td>
+                  <h3>Id: {{ olmData.data.YextPaymentDetails[0].paymentOption }}</h3>
+              </td>
+              
+          </tr>
+      </table> 
+  </div>
+
+  

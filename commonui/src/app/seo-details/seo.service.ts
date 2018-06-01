@@ -1,0 +1,29 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+import { environment } from '../../environments/environment';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
+
+@Injectable()
+export class SeoService {
+
+  
+  constructor(private http: HttpClient) { }
+
+  getSchema() {
+    return this.http.get(environment.schemaPath +'seo.json').catch(e => Observable.of({ failure: e }));
+  }
+
+  getSeoData(enterPriseItemId) {
+    let headers = new HttpHeaders().set(
+      'Authorization', 'Basic ' + btoa(environment.titanUser + ":" + environment.titanPwd));
+
+    headers = headers.append('Access-Control-Allow-Origin', 'http://localhost:4200');
+    headers = headers.append('Access-Control-Allow-Credentials', 'true');
+    headers = headers.append('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS, POST, PUT, DELETE');
+
+    return this.http.get(environment.productUrl + enterPriseItemId) ;
+  }
+}

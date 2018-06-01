@@ -1,0 +1,14 @@
+<div>
+<div *ngIf="error" class="alert alert-danger" role="alert">{{error}}</div>
+<div >
+  <button (click)="onBack(seoData)">Back</button>
+</div>  
+<div class="grid-container-seo" style= "display:inline-grid;">
+  <json-schema-form      
+      class="grid-item-seo" 
+      *ngIf="formActive && !error"
+      loadExternalAssets="true"
+      [form]="seoData"
+      [options]="jsonFormOptions">
+  </json-schema-form>
+</div>

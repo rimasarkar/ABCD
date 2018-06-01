@@ -1,0 +1,249 @@
+{
+  "type": "object",
+  "properties": {
+    "ProductHeader": {
+      "type": "object",
+      "title": "<b>Product Instance Summary</b>",
+      "properties": {
+        "producttype": {
+          "type": "string",
+          "readonly": true,
+          "title": "Product",
+          "default": "",
+          "examples": [
+            "OLM"
+          ]
+        },
+        "enterpriseAccountId": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Account ID",
+          "default": "",
+          "examples": [
+            "BCKM6349"
+          ]
+        },
+        "enterpriseItemId": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Item ID",
+          "default": "",
+          "examples": [
+            "SPPOW03061"
+          ]
+        },
+        "productinstance": {
+          "type": "string",
+          "readonly": true,
+          "title": "Titan Instance ID",
+          "default": "",
+          "examples": [
+            "1204"
+          ]
+        },
+        "enterpriseaccount": {
+          "type": "string",
+          "readonly": true,
+          "title": "Enterprise Account Name",
+          "default": "",
+          "examples": [
+            "Joe Plumber"
+          ]
+        },
+        "businessLocationId": {
+          "type": "string",
+          "readonly": true,
+          "title": "MDB ID",
+          "default": "",
+          "examples": [
+            "10003698326"
+          ]
+        },
+        "instanceStatus": {
+          "type": "string",
+          "readonly": true,
+          "title": "Instance Status",
+          "default": "",
+          "examples": [
+            "Active"
+          ]
+        },
+        "fulfilmentStatus": {
+          "type": "string",
+          "readonly": true,
+          "title": "Workflow Status",
+          "default": "",
+          "examples": [
+            "InProgress"
+          ]
+        },
+        "transactionType": {
+          "type": "string",
+          "readonly": true,
+          "title": "Recent Transaction",
+          "default": "",
+          "examples": [
+            "InProgress"
+          ]
+        },
+        "salesChannelCode": {
+          "type": "string",
+          "readonly": true,
+          "title": "Sales Channel",
+          "default": "",
+          "examples": [
+            "LOCAL"
+          ]
+        },
+        "serviceStartDate": {
+          "type": "string",
+          "readonly": true,
+          "format": "date",
+          "title": "Service Start Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        },
+        "serviceEndDate": {
+          "type": "string",
+          "readonly": true,
+          "format": "date",
+          "title": "Service End Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        },
+        "futureRequestedDate": {
+          "type": "string",
+          "readonly": true,
+          "format": "date",
+          "title": "Future Provision Date",
+          "default": "",
+          "examples": [
+            "2018-03-07"
+          ]
+        }
+      }
+    },
+    "product": {
+      "type": "object",
+      "title": "<b>SEO Fulfillment Data<b>",
+      "properties": {
+        "FirstName": {
+          "type": "string",
+          "readonly": true,
+          "title": "First Name"
+        },"LastName": {
+          "type": "string",
+          "readonly": true
+        },"Phone": {
+          "type": "string",
+          "readonly": true
+        },"EmailID": {
+          "type": "string",
+          "readonly": true
+        },"BusinessName": {
+          "type": "string",
+          "readonly": true
+        },"PrimaryCity": {
+          "type": "string",
+          "readonly": true
+        },"confirmationNumber": {
+          "type": "string",
+          "readonly": true
+        },"proposalId": {
+          "type": "string",
+          "readonly": true
+        },"notes": {
+          "type": "string",
+          "readonly": true
+        },"primaryCategoryId": {
+          "type": "string",
+          "readonly": true
+        },"primaryCategoryName": {
+          "type": "string",
+          "readonly": true
+        }
+      }
+        },
+    "WebsiteUrlList": {
+      "type": "array",      
+      "addable" : false,
+      "removable":false,
+      "orderable": false,
+      "readonly": true,
+      "title": "<b>Website Url List</b>",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "title": "url",
+            "type": "string"
+          },
+          "isDexmediaSite": {
+            "title": "is Dexmedia Site",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "isPrimary": {
+            "title": "is Primary",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "isNew": {
+            "title": "is New",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "username": {
+            "title": "username",
+            "type": "string"
+          },
+          "password": {
+            "title": "password",
+            "type": "string"
+            
+          }
+        }
+      }
+    },
+    "CategoryList": {
+      
+      "type":"array",  
+      "addable" : false,
+      "removable":false,
+      "orderable": false,
+      "readonly": true,
+      "additionalProperties": false,
+      "tupleItems":false,
+      
+      
+      "required":false,
+      "title": "<b>Category List</b>",
+      "items": {        
+        "type": "object",
+        "properties": {
+          "CategoryId": {
+            "title": "Category Id",
+            "type": "string"
+          },
+          "CategoryName": {
+            "title": "Category Name",
+            "type": "string"
+          }
+        }      
+      }    
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "object",  
+  "properties": {
+    "notes": {
+      "type": "array",
+      "addable" : false,
+      "removable":false,
+      "orderable": false,   
+       "title": "Notes",       
+       "items": {
+        "type": "object",
+      "properties": {
+        "sequence":{
+          "type" : "string",
+          "readonly": true,
+          "tittle": "sequence"
+        },
+        "notes": {
+          "type": "string",
+          "readonly": true,
+          "title": "notes"
+        },
+        "addedBy": {
+          "type": "string",
+          "readonly": true,
+          "title": "addedBy"
+        },
+        "addedOn": {
+          "type": "string",
+          "readonly": true,
+          "title": "addedOn"
+        }
+      }
+    }
+    }
+  }
+}
