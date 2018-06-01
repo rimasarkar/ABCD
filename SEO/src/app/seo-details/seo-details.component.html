@@ -1,0 +1,101 @@
+
+<div class="container" style="pointer-events:none">
+  <div class="row">
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>First Name </span>
+      <input type="text"  placeholder="First Name"  class="form-control" [value]="seoheader?.FirstName">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Last Name</span>
+      <input type="text"  placeholder="Last Name" class="form-control" [value]="seoheader?.LastName">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Email Address</span>
+      <input type="email"  placeholder="Email" class="form-control" [value]="seoheader?.EmailID">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Phone Number</span>
+      <input type="text"  placeholder="phone" class="form-control" [value]="seoheader?.Phone">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Notes</span>
+      <input type="text"  placeholder="Notes" class="form-control" [value]="seoheader?.notes">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Primary City</span>
+      <input type="text"  placeholder="City" class="form-control" [value]="seoheader?.PrimaryCity">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Proposal ID</span>
+      <input type="text"  placeholder="Proposla ID" class="form-control" [value]="seoheader?.proposalId">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Business Name</span>
+      <input type="text"  placeholder="Business" class="form-control" [value]="seoheader?.BusinessName">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Primary Category ID</span>
+      <input type="text"  placeholder="category ID" class="form-control" [value]="seoheader?.primaryCategoryId">
+    </div>
+    <div class="form-group col-lg-4 col-sm-6 text-justify">
+      <span>Primary Category Name</span>
+      <input type="text"  placeholder="category name" class="form-control" [value]="seoheader?.primaryCategoryName">
+    </div>
+  </div>
+
+  <div class="table-responsive" style="pointer-events:none">
+    <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+    slds-table--resizable-cols uiVirtualDataTable">
+      <thead>
+        <tr >
+          <td scope="col" >URL</td>
+          <td scope="col" >DEXMEDIA SITE</td>
+          <td scope="col" >PRIMARY</td>
+          <td scope="col" >NEW SITE</td>
+          <td scope="col" >USER NAME</td>
+          <td scope="col" >PASSWORD</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let website of websiteurllist">
+          <td>
+            <input type="text"  placeholder="website url" class="form-control" [value]="website?.url">
+          </td>
+          <td>
+            <input type="text"  placeholder="isDexMedia Site" class="form-control" [value]="website?.isDexmediaSite">
+          </td>
+          <td>
+            <input type="text"  placeholder="isPrimary" class="form-control" [value]="website?.isPrimary">
+          </td>
+          <td>
+            <input type="text"  placeholder="isNew" class="form-control" [value]="website?.isNew">
+          </td>
+          <td>
+            <input type="text"  placeholder="userName" class="form-control" [value]="website?.username">
+          </td>
+          <td>
+            <input type="text"  placeholder="password" class="form-control" [value]="website?.password">
+          </td>
+        </tr>
+    </div>
+  </div>
+  <div class="table-responsive table-striped" style="pointer-events:none">
+      <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+      slds-table--resizable-cols uiVirtualDataTable">
+      <thead>
+        <tr >
+          <td scope="col">Category Id</td>
+          <td scope="col">Category Name</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let category of categorylist">
+          <td>
+            <input type="text"  placeholder="category Id" class="form-control" [value]="category?.CategoryId">
+          </td>
+          <td>
+            <input type="text"  placeholder="category Name" class="form-control" [value]="category?.CategoryName">
+          </td>
+        </tr>
+    </div>
+  </div>

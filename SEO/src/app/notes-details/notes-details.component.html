@@ -1,0 +1,28 @@
+<div class="container" style="pointer-events:none;">
+  <div class="table-responsive">
+    <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered 
+               resizable-cols slds-table--resizable-cols uiVirtualDataTable">
+    <thead>
+      <tr >
+        <th scope="col"> NOTES </th>
+        <th scope="col"> ADDED BY </th>
+        <th scope="col"> ADDED ON </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let not of notes">
+        <td>
+          <input type="text"  placeholder="notes" class="form-control" [value]="not?.notes"> 
+        </td>
+        <td>
+          <input type="text"  placeholder="added by" class="form-control" [value]="not?.addedBy"> 
+        </td>
+        <td>
+          <input type="text"  placeholder="added on" class="form-control" [value]="not?.addedOn"> 
+        </td>
+      </tr>
+      </tbody>
+      </div>
+  </div>
+  <button type="button" class="btn btn-outline-primary"> Return </button> 
+</div>

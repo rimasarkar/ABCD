@@ -1,0 +1,283 @@
+<p>
+  olm-details works!
+</p>
+
+<div class="container" style="pointer-events:none">
+  <div class="row">
+      <div class="form-group col-xs-2 col-sm-2  text-justify">
+          <span>Yext Request Id</span>
+          <input type="text"  placeholder="yextRequestId"  class="form-control" [value]="olmheader?.yextRequestId">
+      </div>
+      <div class="form-group col-xs-2 col-sm-2 text-justify">
+          <span>SkuId</span>
+          <input type="text"  placeholder="skuId"  class="form-control" [value]="olmheader?.skuId">
+      </div>
+      <div class="form-groupcol-xs-2 col-sm-2 text-justify">
+          <span>AgreementId</span>
+          <input type="text"  placeholder="agreementId"  class="form-control" [value]="olmheader?.agreementId">
+      </div>
+      <div class="form-group col-xs-6 col-sm-3 text-justify">
+          <span>Business Name</span>
+          <input type="text"  placeholder="businessName"  class="form-control" [value]="olmheader?.businessName">
+      </div>
+      <div class="form-group col-xs-6 col-sm-3 text-justify">
+          <span>Contact First Name</span>
+          <input type="text"  placeholder="contactFirstName"  class="form-control" [value]="olmheader?.contactFirstName">
+      </div>
+      <div class="form-group col-xs-6 col-sm-3 text-justify">
+            <span>Contact Middle Name</span>
+            <input type="text"  placeholder="contactMiddleName"  class="form-control" [value]="olmheader?.contactMiddleName">
+        </div>
+
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Contact Last Name</span>
+                <input type="text"  placeholder="contactLastName"  class="form-control" [value]="olmheader?.contactLastName">
+        </div>
+
+         <div class="form-group col-xs-6 col-sm-3 text-justify">
+            <span>Contact Email</span>
+            <input type="email"  placeholder="contactEmail"  class="form-control" [value]="olmheader?.contactEmail">
+        </div>
+        
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+            <span>Contact Phone</span>
+            <input type="text"  placeholder="contactPhone"  class="form-control" [value]="olmheader?.contactPhone">
+        </div>
+        <!-- <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Phone</span>
+                <input type="text"  placeholder="phone"  class="form-control" [value]="olmheader?.phone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Business Description</span>
+                <input type="text"  placeholder="businessDescription"  class="form-control" [value]="olmheader?.businessDescription">
+        </div>-->
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>IsPhoneTracked</span>
+                <input type="text"  placeholder="isPhoneTracked"  class="form-control" [value]="olmheader?.isPhoneTracked">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Location Type</span>
+                <input type="text"  placeholder="locationType"  class="form-control" [value]="olmheader?.locationType">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Location Name</span>
+                <input type="text"  placeholder="locationName"  class="form-control" [value]="olmheader?.locationName">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                        <span>Specialties</span>
+                        <input type="text"  placeholder="specialties"  class="form-control" [value]="olmheader?.specialties">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>zip4</span>
+                <input type="text"  placeholder="zip4"  class="form-control" [value]="olmheader?.zip4">
+        </div>
+                
+        <div class="form-group col-xs-6 col-sm-3 text-justify">
+                <span>Office Name</span>
+                <input type="text"  placeholder="officeName"  class="form-control" [value]="olmheader?.officeName">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>gender</span>
+                <input type="text"  placeholder="gender"  class="form-control" [value]="olmheader?.gender">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>npi</span>
+                <input type="text"  placeholder="npi"  class="form-control" [value]="olmheader?.npi">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Address</span>
+                <input type="text"  placeholder="address"  class="form-control" [value]="olmheader?.address">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Address2</span>
+                <input type="text"  placeholder="address2"  class="form-control" [value]="olmheader?.address2">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Suppress Address</span>
+                <input type="text"  placeholder="suppressAddress"  class="form-control" [value]="olmheader?.suppressAddress">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Display Address</span>
+                <input type="text"  placeholder="displayAddress"  class="form-control" [value]="olmheader?.displayAddress">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>City</span>
+                <input type="text"  placeholder="city"  class="form-control" [value]="olmheader?.city">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>State</span>
+                <input type="text"  placeholder="state"  class="form-control" [value]="olmheader?.state">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>SubLocality</span>
+                <input type="text"  placeholder="subLocality"  class="form-control" [value]="olmheader?.subLocality">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>zip</span>
+                <input type="text"  placeholder="zip"  class="form-control" [value]="olmheader?.zip">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Country Code</span>
+                <input type="text"  placeholder="countryCode"  class="form-control" [value]="olmheader?.countryCode">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>local Phone</span>
+                <input type="text"  placeholder="localPhone"  class="form-control" [value]="olmheader?.localPhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Alternate Phone</span>
+                <input type="text"  placeholder="alternatePhone"  class="form-control" [value]="olmheader?.alternatePhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Fax Phone</span>
+                <input type="text"  placeholder="faxPhone"  class="form-control" [value]="olmheader?.faxPhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Mobile Phone</span>
+                <input type="text"  placeholder="mobilePhone"  class="form-control" [value]="olmheader?.mobilePhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Toll Free Phone</span>
+                <input type="text"  placeholder="tollfreePhone"  class="form-control" [value]="olmheader?.tollfreePhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>TTY Phone</span>
+                <input type="text"  placeholder="ttyPhone"  class="form-control" [value]="olmheader?.ttyPhone">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Featured Message</span>
+                <input type="text"  placeholder="featuredMessage"  class="form-control" [value]="olmheader?.featuredMessage">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Business Hours</span>
+                <input type="text"  placeholder="businessHours"  class="form-control" [value]="olmheader?.businessHours">
+        </div>
+        <!-- <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Logo Url</span>
+                <input type="text"  placeholder="logoUrl"  class="form-control" [value]="olmheader?.logoUrl">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Logo Details</span>
+                <input type="text"  placeholder="logoDetails"  class="form-control" [value]="olmheader?.logoDetails">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Logo AlternateText</span>
+                <input type="text"  placeholder="logoAlternateText"  class="form-control" [value]="olmheader?.logoAlternateText">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Logo Width</span>
+                <input type="text"  placeholder="logoWidth"  class="form-control" [value]="olmheader?.logoWidth">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Logo Height</span>
+                <input type="text"  placeholder="logoHeight"  class="form-control" [value]="olmheader?.logoHeight">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Instagram Handle</span>
+                <input type="text"  placeholder="instagramHandle"  class="form-control" [value]="olmheader?.instagramHandle">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Twitter Handle</span>
+                <input type="text"  placeholder="twitterHandle"  class="form-control" [value]="olmheader?.twitterHandle">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Website Url</span>
+                <input type="text"  placeholder="websiteUrl"  class="form-control" [value]="olmheader?.websiteUrl">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Google Website Override</span>
+                <input type="text"  placeholder="googleWebsiteOverride"  class="form-control" [value]="olmheader?.googleWebsiteOverride">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Google Cover Photo Url</span>
+                <input type="text"  placeholder="googleCoverPhotoUrl"  class="form-control" [value]="olmheader?.googleCoverPhotoUrl">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Google Cover Photo Url</span>
+                <input type="text"  placeholder="googleCoverPhotoUrl"  class="form-control" [value]="olmheader?.googleCoverPhotoUrl">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Google Profile Photo Description</span>
+                <input type="text"  placeholder="googleProfilePhotoDescription"  class="form-control" [value]="olmheader?.googleProfilePhotoDescription">
+        </div>
+        <div class="form-group col-xs-6 col-sm-3 text-justify"> 
+                <span>Google Profile Photo Details</span>
+                <input type="text"  placeholder="googleProfilePhotoDetails"  class="form-control" [value]="olmheader?.googleProfilePhotoDetails">
+        </div> -->
+  </div>
+  <div class="table-responsive table-striped" style="pointer-events:none">
+                <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+                slds-table--resizable-cols uiVirtualDataTable">
+                <thead>
+                  <tr >
+                    <td scope="col">Category List</td>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let category of categorylist">
+                    <td>
+                      <input type="text"  placeholder="YextPaymentDetails" class="form-control" [value]="category?.yextCategoryId">
+                    </td>
+                    
+                  </tr>
+              </div>
+  </div>
+ 
+  <div class="table-responsive table-striped" style="pointer-events:none">
+                <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+                slds-table--resizable-cols uiVirtualDataTable">
+                <thead>
+                  <tr >
+                    <td scope="col">Language Details</td>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let language of languageDetails">
+                    <td>
+                      <input type="text"  placeholder="languageDetails" class="form-control" [value]="language?.language">
+                    </td>
+                    
+                  </tr>
+              </div>
+  </div>
+  
+   <div class="table-responsive table-striped" style="pointer-events:none">
+                <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+                slds-table--resizable-cols uiVirtualDataTable">
+                <thead>
+                  <tr >
+                    <td scope="col">Payment Details</td>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let payment of paymentDetails">
+                    <td>
+                      <input type="text"  placeholder="YextPaymentDetails" class="form-control" [value]="payment?.paymentOption">
+                    </td>
+                    
+                  </tr>
+              </div>
+  </div>
+
+</div>
+<!-- 
+<div class="table-responsive table-striped" style="pointer-events:none">
+
+        <div class="table slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols 
+        slds-table--resizable-cols uiVirtualDataTable">
+        <thead>
+          <tr >
+            <td scope="col">YextCategory Id</td>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let category of categorylist">
+            <td>
+              <input type="text"  placeholder="yextCategoryId" class="form-control" [value]="categorylist?.yextCategoryId">
+            </td>
+            
+          </tr>
+      </div>
+    </div> -->
+
+    

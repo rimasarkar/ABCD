@@ -1,0 +1,23 @@
+export interface Tasks {
+  productinstance?: number;
+  enterpriseAcctId?: string;
+  enterpriseItemId?: string;
+  businessLocationId?: string;
+  productType?: string;
+  productTier?: string;
+  salesChannelCode?: string;
+  transactionType?: string;
+  instanceStatus?: string;
+  fulfilmentStatus?: string;
+  primaryItemIdForAddon?: string;
+  previousItemId?: string;
+  parentId?: string;
+  serviceStartDate?: Date;
+  serviceEndDate?: Date;
+  futureRequestedDate?: Date;
+  addedBy?: string;
+  addedDate?: Date;
+  updatedBy?: string;
+  updatedDate?: Date;
+  id?: string;
+};
